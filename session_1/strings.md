@@ -13,17 +13,17 @@
 
 # Resolution steps
 
-J'ai executé le programme pour analiser le resultat
+J'ai executé le programme pour analiser le résultat
 
-j'ai coonstaté que le programme contenait des chaines de caractères 
+j'ai constaté que le programme contenait des chaines de caractères 
 
 j'ai lancé le programme avec la commande strings pour extraire toutes les chaines de caractères,
-parmis celles ci se trrouvait le mot de passe.
+parmis celles ci se trouvait le mot de passe.
 
 # Challenge evaluation
 
 - How do you estimate the difficulty of the challenge?
-1. Very easy;
+1. easy;
 
 X
 
