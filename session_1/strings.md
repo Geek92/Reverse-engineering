@@ -2,39 +2,36 @@
 
 - Name of the challenge: strings
 
-- Download date: January 1st 2022 00h00
-- Resolved: Yes/No
+- Download date: 07/11/2023
+- Resolved: Yes
 
-- Solution (Password): XXX
-- Finish date: January 1st 2022 00h00
-- Time spent: 0day 00h 00min
+- Solution (Password): Ors0n Sco77 C4rd
+- Finish date: 07/11/2023
+- Time spent: 0day 00h 20min
 
 - Tools used: XXX
 
 # Resolution steps
 
-I have launched the program.
+J'ai executé le programme pour analiser le resultat
 
-I have try "toto" as argv and I have seen that it's not the right password
+j'ai coonstaté que le programme contenait des chaines de caractères 
 
-I have open the program in ghidra
-
-I have open the entry function
-
-...
+j'ai lancé le programme avec la commande strings pour extraire toutes les chaines de caractères,
+parmis celles ci se trrouvait le mot de passe.
 
 # Challenge evaluation
 
 - How do you estimate the difficulty of the challenge?
-1. Very easy  ; 2. Easy ; 3. Medium; 4. Hard; 5. Very hard
+1. Very easy;
 
 X
 
 - How do you estimate the ratio between the points and the difficulty of the challenge?
-1. Not enough point ; 2. No problem ; 3. Too much point
+2. No problem;
 
 X
 
 - How many points would you accord to the challenge?
 
-XXX points
+50 points
