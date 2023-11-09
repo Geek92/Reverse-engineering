@@ -2,39 +2,42 @@
 
 - Name of the challenge: no_strings
 
-- Download date: January 1st 2022 00h00
-- Resolved: Yes/No
+- Download date: 07/11/2023
+- Resolved: Yes
 
-- Solution (Password): XXX
-- Finish date: January 1st 2022 00h00
-- Time spent: 0day 00h 00min
+- Solution (Password): Ar7hU c. Cl4rk3
+- Finish date: 07/11/2023
+- Time spent: 0day 00h 40min
 
 - Tools used: XXX
 
 # Resolution steps
 
-I have launched the program.
+J'ai exécuté le programme
 
-I have try "toto" as argv and I have seen that it's not the right password
+j'ai lancé la commande readelf -a
 
-I have open the program in ghidra
+j'ai lancé la commande objdump -d -M intel notring
 
-I have open the entry function
+j'ai examiné le code de la fonction main 
 
-...
+j'ai decouvert un tableau qui est initialisé,
+ce tableau est utilisé par la suite pour faire une comparaison avec la chaine de caractères inserée par l'utilisateur.
+
+j'ai decodé la chaine de caractère stockée dans le tableau, celle ci correspondait au mot de passe.
 
 # Challenge evaluation
 
 - How do you estimate the difficulty of the challenge?
-1. Very easy  ; 2. Easy ; 3. Medium; 4. Hard; 5. Very hard
+ 2. Easy;
 
 X
 
 - How do you estimate the ratio between the points and the difficulty of the challenge?
-1. Not enough point ; 2. No problem ; 3. Too much point
+2. No problem ;
 
 X
 
 - How many points would you accord to the challenge?
 
-XXX points
+100 points
