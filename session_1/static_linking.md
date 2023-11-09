@@ -2,39 +2,46 @@
 
 - Name of the challenge: static_linking
 
-- Download date: January 1st 2022 00h00
-- Resolved: Yes/No
+- Download date: 08/11/2023
+- Resolved: Yes
 
-- Solution (Password): XXX
-- Finish date: January 1st 2022 00h00
-- Time spent: 0day 00h 00min
+- Solution (Password): 1984
+- Finish date: 08/11/2023
+- Time spent:  30min
 
 - Tools used: XXX
 
 # Resolution steps
 
-I have launched the program.
+J'ai exécuté le programme.
 
-I have try "toto" as argv and I have seen that it's not the right password
+j'ai inseré un nombre, ce n'etait pas le nombre exact
 
-I have open the program in ghidra
+j'ai lançé la commande readelf -a
 
-I have open the entry function
+j'ai lançé la commande j'ai lancé la commande objdump -d -M intel stat_link > fichier.txt 
+
+j'ai examiné le code de la fonction main.
+
+en analisant le main on constate qu'on va recuperer le nombre passé en parametre à la fonction scanf eensuite on fait un xor entre entre celui-ci et le nombre 0x2323.
+Ensuite on le compare au nombre 0x24e3
+
+pour trouver la valeur du mot de passe j'ai effectué un xor entre 0x2323 et 0x24e3.
 
 ...
 
 # Challenge evaluation
 
 - How do you estimate the difficulty of the challenge?
-1. Very easy  ; 2. Easy ; 3. Medium; 4. Hard; 5. Very hard
+ 2. Easy;
 
 X
 
 - How do you estimate the ratio between the points and the difficulty of the challenge?
-1. Not enough point ; 2. No problem ; 3. Too much point
+ 2. No problem; 
 
 X
 
 - How many points would you accord to the challenge?
 
-XXX points
+150 points
