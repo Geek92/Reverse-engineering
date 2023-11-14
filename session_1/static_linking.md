@@ -19,7 +19,7 @@ j'ai inseré un nombre, ce n'etait pas le nombre exact
 
 j'ai lançé la commande readelf -a
 
-j'ai lançé la commande j'ai lancé la commande objdump -d -M intel stat_link > fichier.txt 
+j'ai lancé la commande objdump -d -M intel stat_link > fichier.txt 
 
 j'ai examiné le code de la fonction main.
 
