@@ -24,14 +24,14 @@ j'ai ouvert le programme avec ghidra
 j 'ai selectioné la fonction entry
 
 au niveau de la ligne 7 on peut voir un appel à la fonction de la libc qui à son tour appele la fonction main
-'__libc_start_main(FUN_001012d0,param_2,&stack0x00000008,0,0,param_1,auStack_8);'
+`__libc_start_main(FUN_001012d0,param_2,&stack0x00000008,0,0,param_1,auStack_8);`
 
 j'ai renomé le premier parametre en main
 
 j'ai analysé la fonction main 
 
 à la ligne 33 on peut observer un appel à une fonction  qui prends comme premier un pointeur vers la chaine decharactère inserée lors de l'execution du fichier binaire, et comme deuxieme parametre un pointeur vers une seconde chaine de charactère qui represente le mot de passe
-'iVar1 = FUN_00101200(local_18[1],local_148);'
+ `iVar1 = FUN_00101200(local_18[1],local_148);`
 
 j'ai renomé la fonction FUN_00101200 en strcmp
 
