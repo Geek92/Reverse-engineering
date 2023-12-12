@@ -42,28 +42,28 @@ j'ai supposé que la librairie utilisée etait openssl, j'ai recherché des reff
 
 # step 3
 -Resolved: Yes
-- Solution (Password): Resolved:
-- Finish date: 5/12/2023
+- Solution (Password): 81 FC 95 DF 61 7C 27 6F 2C 05 7F D6 3B 0F 63 82
+- Finish date: 12/12/2023
 
-- Tools used: STRINGS GHIDRA
+- Tools used: STRINGS GHIDRA,VM
 
 # Resolution steps
-
+pour trouver  le AES IV du /root/flag je commence par analyser la fonction encrypt_directory je constate qu 'elle ouvre le repertoire et qu'elle cree des fichier avec l'extention .encrypted  et en observant la fonction encryptfile, on constate que celle ci ouvre le fichier passè en parametre en mode écriture binaire donc je suppose qu'il faut regarder le contenu du fichier flag.encrypted dans le repertoire root. j'ai monté disque et j'ai constaté que le fichier  flag.encrypted est un fichier binaire, j'ai executé la commande xxd flag.encrypted > result_hex.txt le contenu du ficiher result_hex.txt n'est pas très comprehensible du coup je retourne sur ghidra pour inspecter la fonction encrytfile, à l'interieur de cette fonction je constate un appel à la fofnction mbedtls_pk_encrypt cette fonction prends en parametre la taille du message à chiffrer dans notre cas 16 bytes j'ai supposé par intuition qu'il correspond au IV et elle prends egalement en parametre la taille du buffer de sortie dans notre cas 256 byte. je suis retourné dans le fichier result_hex.txt j'ai exclue les 256 premiers bytes correspondants à la sortie et j'ai récupéré les 16 octect suivant qui correspondent au message j'ai essayé la solution et elle a fonctioné. 
 
 ...
 
 # Challenge evaluation
 
 - How do you estimate the difficulty of the challenge?
-1. Very easy  ; 2. Easy ; 3. Medium; 4. Hard; 5. Very hard
+4. Hard; 
 
 X
 
 - How do you estimate the ratio between the points and the difficulty of the challenge?
-1. Not enough point ; 2. No problem ; 3. Too much point
+1. Not enough point;
 
 X
 
 - How many points would you accord to the challenge?
 
-XXX points
+500 points
